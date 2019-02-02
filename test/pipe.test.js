@@ -48,6 +48,12 @@ describe('corner cases', () => {
       assert.deepEqual(pipeline({ foo: 1 }, { foo: null }, null), { foo: 1 });
     });
   });
+
+  describe('pipeline(obj, () => {}, null)', () => {
+    it('default', () => {
+      assert.deepEqual(pipeline({ foo: 1 }, null, null), { foo: 1 });
+    });
+  });
 });
 
 

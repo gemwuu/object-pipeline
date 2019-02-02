@@ -8,10 +8,12 @@
     "lodash.has": "^4.5.2"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "cov": "nyc --reporter=html mocha"
   },
   "repository": {
     "type": "git",
