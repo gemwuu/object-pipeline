@@ -1,0 +1,30 @@
+{
+  "name": "lodash-plus",
+  "description": "This is a lodash enhancement toolkit.",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.has": "^4.5.2"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gemwuu/lodash-plus.git"
+  },
+  "keywords": [
+    "lodash",
+    "enhancement"
+  ],
+  "author": "ke.wu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gemwuu/lodash-plus/issues"
+  },
+  "homepage": "https://github.com/gemwuu/lodash-plus#readme"
+}
