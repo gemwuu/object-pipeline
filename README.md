@@ -15,18 +15,22 @@ const nameObj = {
 };
 
 
-lodashPipeline(nameObj, 'tim', item => `hello, ${item}.`);
+pipeline(nameObj, 'tim', item => `hello, ${item}.`);
 // { tim: 'hello, tim', jack: 'jack' }
 
-lodashPipeline(nameObj, [ 'tim', 'xxx' ], item => `hello, ${item}.`);
+pipeline(nameObj, [ 'tim', 'xxx' ], item => `hello, ${item}.`);
 // { tim: 'hello, tim', jack: 'jack' }
 
-lodashPipeline(nameObj, { tim: item => `no, ${item}` }, item => `hello, ${item}.`);
+pipeline(nameObj, { tim: item => `no, ${item}` }, item => `hello, ${item}.`);
 // { tim: 'no, tim', jack: 'jack' }
 
-lodashPipeline(nameObj, [ { tim: item => `no, ${item}` }, 'jack' ], item => `hello, ${item}.`);
+pipeline(nameObj, [ { tim: item => `no, ${item}` }, 'jack' ], item => `hello, ${item}.`);
 // { tim: 'no, tim', jack: 'hello, jack.' }
 ```
+
+### Roadmap
+1. rewrite using TypeScript
+2. add pickout function to pick out useless attributes from an object
 
 ### Coverage
 File         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
