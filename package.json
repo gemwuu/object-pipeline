@@ -13,7 +13,8 @@
   },
   "scripts": {
     "test": "mocha",
-    "cov": "nyc --reporter=html mocha"
+    "cov": "nyc --reporter=html mocha",
+    "c": "nyc --reporter=text mocha"
   },
   "repository": {
     "type": "git",
