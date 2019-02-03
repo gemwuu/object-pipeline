@@ -29,11 +29,20 @@ describe('corner cases', () => {
     it('error, fn0 invalid', () => {
       assert.deepEqual(pipeline({ foo: 1 }, [{ foo: item => ++item }], null), { foo: 2 });
     });
+    it('error, fn0 invalid', () => {
+      assert.deepEqual(pipeline({ foo: 1 }, ['foo'], null), { foo: 1 });
+    });
     it('error, fn1 invalid', () => {
       assert.deepEqual(pipeline({ foo: 1 }, [{ foo: null }], item => ++item), { foo: 2 });
     });
     it('error, fn0 and fn1 invalid', () => {
       assert.deepEqual(pipeline({ foo: 1 }, [{ foo: null }], null), { foo: 1 });
+    });
+    it('error, fn0 and fn1 invalid', () => {
+      assert.deepEqual(pipeline({ foo: 1 }, [null], null), { foo: 1 });
+    });
+    it('error, fn0 and fn1 invalid', () => {
+      assert.deepEqual(pipeline({ foo: 1 }, [ { bar: item => --item } ], null), { foo: 1 });
     });
   });
 

@@ -31,8 +31,8 @@ lodashPipeline(nameObj, [ { tim: item => `no, ${item}` }, 'jack' ], item => `hel
 ### Coverage
 File         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 -------------|----------|----------|----------|----------|-------------------|
-All files    |      100 |    90.63 |      100 |      100 |                   |
- pipeline.js |      100 |    90.63 |      100 |      100 |          43,46,49 |
+All files    |      100 |      100 |      100 |      100 |                   |
+ pipeline.js |      100 |      100 |      100 |      100 |                   |
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
