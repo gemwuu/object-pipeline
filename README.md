@@ -6,7 +6,7 @@ TODO
 
 ## Usage
 ### lodash.pipeline
-const lodashPipeline = require('lodash-plus/pipeline');
+const pipeline = require('lodash-plus/pipeline');
 
 ```javascript
 const nameObj = {
@@ -35,8 +35,8 @@ pipeline(nameObj, [ { tim: item => `no, ${item}` }, 'jack' ], item => `hello, ${
 ### Coverage
 File         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 -------------|----------|----------|----------|----------|-------------------|
-All files    |      100 |    90.63 |      100 |      100 |                   |
- pipeline.js |      100 |    90.63 |      100 |      100 |          43,46,49 |
+All files    |      100 |      100 |      100 |      100 |                   |
+ pipeline.js |      100 |      100 |      100 |      100 |                   |
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
