@@ -1,7 +1,7 @@
 'use strict';
 
 import clonedeep from 'lodash.clonedeep';
-import has from 'lodash/has';
+import has from 'lodash.has';
 
 type Callback = (...args: any[]) => any;
 
