@@ -3,7 +3,7 @@
 import clonedeep from 'lodash.clonedeep';
 import has from 'lodash.has';
 
-type Callback = (...args: any[]) => any;
+type CallbackFunctionType = (...args: any[]) => any;
 
 function type(value: any): string {
   return Object.prototype.toString
@@ -12,14 +12,14 @@ function type(value: any): string {
     .toLowerCase();
 }
 
-function validFn(fn: Callback): boolean {
+function validFn(fn: CallbackFunctionType): boolean {
   return type(fn) === 'function';
 }
 
 export function pipeline(
   obj: object,
   keys: any,
-  fn: Callback
+  fn: CallbackFunctionType
 ) {
   if (!obj || type(obj) !== 'object') {
     return obj;
