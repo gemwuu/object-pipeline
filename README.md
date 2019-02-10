@@ -1,5 +1,5 @@
 # lodash-plus
-This is a lodash enhancement toolkit.
+This is a lodash enhancement toolkit, written in TypeScript.
 
 ## Install
 TODO
@@ -28,9 +28,9 @@ pipeline(nameObj, [ { tim: item => `no, ${item}` }, 'jack' ], item => `hello, ${
 ```
 
 ### Roadmap
-1. rewrite using TypeScript
-2. add pickout function to pick out useless attributes from an object
-3. add optional-chaining to pipeline and pickout
+1. add pickout function to pick out useless attributes from an object
+2. add optional-chaining to pipeline and pickout
+3. add Array data support
 
 ### Coverage
 File         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
