@@ -6,9 +6,9 @@ TODO
 
 ## Usage
 ### lodash.pipeline
+```javascript
 const pipeline = require('lodash-plus/pipeline');
 
-```javascript
 const nameObj = {
   tim: 'tim',
   jack: 'jack',
