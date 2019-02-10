@@ -8,6 +8,8 @@
     "lodash.has": "^4.5.2"
   },
   "devDependencies": {
+    "@types/lodash.clonedeep": "^4.5.4",
+    "@types/lodash.has": "^4.5.4",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0"
   },

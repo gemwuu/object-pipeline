@@ -7,7 +7,7 @@
  **/
 
 const assert = require('assert');
-const { pipeline } = require('../src/pipeline');
+const { pipeline } = require('../build/pipeline');
 
 
 describe('corner cases', () => {

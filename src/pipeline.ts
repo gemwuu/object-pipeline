@@ -1,33 +1,33 @@
 'use strict';
-/**
- * @author: tianding.wk
- * @createdTime: 2019-02-02 17:13:02
- * @fileName: pipeline.js
- * @description:
- **/
 
-const clonedeep = require('lodash.clonedeep');
-const has = require('lodash.has');
+import clonedeep from 'lodash.clonedeep';
+import has from 'lodash/has';
 
-function type(v) {
+type Callback = (...args: any[]) => any;
+
+function type(value: any): string {
   return Object.prototype.toString
-    .call(v)
+    .call(value)
     .match(/\[object\ (.*)\]/)[1]
     .toLowerCase();
 }
 
-function validFn(fn) {
+function validFn(fn: Callback): boolean {
   return type(fn) === 'function';
 }
 
-function pipeline(obj, keys, fn) {
+export function pipeline(
+  obj: object,
+  keys: any,
+  fn: Callback
+) {
   if (!obj || type(obj) !== 'object') {
     return obj;
   }
-  const newObj = clonedeep(obj);
-  const isValidFn = type(fn) === 'function';
+  const newObj: object = clonedeep(obj);
+  const isValidFn: boolean = type(fn) === 'function';
 
-  switch(type(keys)) {
+  switch (type(keys)) {
     case 'string':
       // pipeline(obj, 'a', fn);
       if (has(newObj, keys)) {
@@ -37,7 +37,7 @@ function pipeline(obj, keys, fn) {
       }
       break;
     case 'array':
-      keys.forEach(key => {
+      keys.forEach((key: any) => {
         // pipeline(obj, [ 'a', 'b' ], fn);
         if (type(key) === 'string' && has(newObj, key)) {
           if (isValidFn) {
@@ -66,6 +66,3 @@ function pipeline(obj, keys, fn) {
   }
   return newObj;
 }
-
-exports.pipeline = pipeline;
-
