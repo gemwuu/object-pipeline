@@ -1,4 +1,4 @@
-# lodash-plus
+# object-pipeline
 This is a lodash enhancement toolkit, written in TypeScript.
 
 ## Install
@@ -7,7 +7,7 @@ TODO
 ## Usage
 ### lodash.pipeline
 ```javascript
-const pipeline = require('lodash-plus/pipeline');
+const pipeline = require('object-pipeline/pipeline');
 
 const nameObj = {
   tim: 'tim',
