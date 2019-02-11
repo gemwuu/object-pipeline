@@ -1,7 +1,7 @@
 {
   "name": "object-pipeline",
   "description": "This is a lodash enhancement toolkit.",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "main": "index.js",
   "dependencies": {
     "lodash.clonedeep": "^4.5.0",
