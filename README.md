@@ -8,7 +8,7 @@ npm i -S object-pipeline
 
 ## Usage
 ```javascript
-const pipeline = require('object-pipeline/pipeline');
+const pipeline = require('object-pipeline');
 
 const nameObj = {
   tim: 'tim',
