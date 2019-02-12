@@ -7,7 +7,6 @@ npm i -S object-pipeline
 ```
 
 ## Usage
-### lodash.pipeline
 ```javascript
 const pipeline = require('object-pipeline/pipeline');
 
@@ -28,13 +27,17 @@ pipeline(nameObj, { tim: item => `no, ${item}` }, item => `hello, ${item}.`);
 pipeline(nameObj, [ { tim: item => `no, ${item}` }, 'jack' ], item => `hello, ${item}.`);
 // { tim: 'no, tim', jack: 'hello, jack.' }
 ```
+## Build
+```bash
+tsc
+```
 
-### Roadmap
+## Roadmap
 1. add pickout function to pick out useless attributes of an object
 2. add optional-chaining to pipeline and pickout
 3. add Array support
 
-### Coverage
+## Coverage
 File         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 -------------|----------|----------|----------|----------|-------------------|
 All files    |      100 |      100 |      100 |      100 |                   |
