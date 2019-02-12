@@ -1,5 +1,5 @@
 # object-pipeline
-This is a lodash enhancement toolkit, written in TypeScript.
+A JavaScript Object Processor, A Pipeline Function
 
 ## Install
 ```bash
