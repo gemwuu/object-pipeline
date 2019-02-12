@@ -2,7 +2,9 @@
 This is a lodash enhancement toolkit, written in TypeScript.
 
 ## Install
-TODO
+```bash
+npm i -S object-pipeline
+```
 
 ## Usage
 ### lodash.pipeline
