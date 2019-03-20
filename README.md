@@ -42,6 +42,7 @@ File         |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 -------------|----------|----------|----------|----------|-------------------|
 All files    |      100 |      100 |      100 |      100 |                   |
  pipeline.js |      100 |      100 |      100 |      100 |                   |
+ util.ts     |      100 |      100 |      100 |      100 |                   |
 
 ## License
 [MIT](http://opensource.org/licenses/MIT)
