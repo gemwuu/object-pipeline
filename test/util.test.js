@@ -35,8 +35,6 @@ describe('type', () => {
   it('undefined', () => {
     assert.strictEqual(type(undefined), 'undefined');
   });
-  it('NaN', () => {
-  });
   it('Map', () => {
     assert.strictEqual(type(new Map()), 'map');
   });
